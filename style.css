@@ -1,0 +1,21 @@
+.part2 div {
+  height: 10px;
+  background-color: red;
+  margin: 10px;
+}
+.part2 :nth-child(1) {
+  background-color: blue;
+}
+.part2 :nth-last-child(1) {
+  background-color: green;
+}
+.part2 :nth-child(odd) {
+  background-color: pink;
+}
+.part2 :nth-child(even) {
+  background-color: orange;
+}
+
+.part2 :nth-child(3n + 1):nth-child(even) {
+  background-color: fuchsia;
+}
