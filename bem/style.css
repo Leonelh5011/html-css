@@ -1,0 +1,16 @@
+.logo-caption__img {
+  width: 25rem;
+}
+.logo-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-caption__desc {
+  color: rgba(0, 0, 0, 0.151);
+  text-align: center;
+}
+.logo-caption__title {
+  text-align: center;
+  font-size: 2rem;
+}
