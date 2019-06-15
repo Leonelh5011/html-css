@@ -1,13 +1,13 @@
-.logo-caption__img {
-  width: 25rem;
-}
 .logo-caption {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.logo-caption__img {
+  width: 25rem;
+}
 .logo-caption__desc {
-  color: rgba(0, 0, 0, 0.151);
+  color: rgba(0,0,0,0.5);
   text-align: center;
 }
 .logo-caption__title {
