@@ -1,0 +1,42 @@
+@import "nib"
+
+global-reset()
+
+rem(number-px)
+    return (number-px / 16) rem
+
+red = #c41515
+
+.main-header
+    display: flex
+    background: red
+    width: 100%
+    justify-content: space-between
+    align-items: center
+
+.logo-caption__img
+    width: rem(50)
+
+.navegator-header
+    display: flex
+    padding: 0 2rem
+
+    &__option
+        padding: 0 1rem
+
+        &--relative
+            position: relative
+
+            &:hover
+                .submenu
+                    display: block
+
+.submenu
+    absolute: bottom left
+    transform: translateY(100%)
+    padding: 1rem 0 0 1rem
+    display: none
+    background-color: red
+
+    &__option
+        padding-top: 0.5rem
