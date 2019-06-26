@@ -1,28 +1,56 @@
 @import "nib"
 
-global-reset()
+global-reset(  )
 
-rem(number-px)
-    return (number-px / 16) rem
+rem( number-px )
+    return ( number-px / 16 ) rem
 
-red = #c41515
+blue = #004284
+light = 100
 
 .main-header
-    display: flex
-    background: red
-    width: 100%
-    justify-content: space-between
     align-items: center
+    background: blue
+    display: flex
+    justify-content: space-between
+    width: 100%
 
-.logo-caption__img
-    width: rem(50)
+.logo-caption
+    align-items: center
+    color: #fff
+    display: flex
+    margin: 0
+    width: rem( 300px )
+
+    &__img
+        display: flex
+        padding: rem( 10 )
+        width: rem( 50 )
+
+    &__name
+        color: #ffffff
+        display: flex
+        flex-direction: column
+        font-family: Source Sans Pro
+        font-size: rem( 21 )
+        font-weight: light
+
+        &--motto
+            color: #fff
+            font-family: Source Sans Pro
+            font-size: rem( 12 )
+            font-weight: light
 
 .navegator-header
     display: flex
     padding: 0 2rem
 
     &__option
+        color: #fff
+        font-family: Source Sans Pro
+        font-weight: light
         padding: 0 1rem
+        text-decoration: none
 
         &--relative
             position: relative
@@ -33,10 +61,10 @@ red = #c41515
 
 .submenu
     absolute: bottom left
-    transform: translateY(100%)
-    padding: 1rem 0 0 1rem
-    display: none
     background-color: red
+    display: none
+    padding: 1rem 0 0 1rem
+    transform: translateY( 100% )
 
     &__option
         padding-top: 0.5rem

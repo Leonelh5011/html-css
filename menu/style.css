@@ -90,29 +90,77 @@ a img {
   border: none;
 }
 .main-header {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  background: #c41515;
-  width: 100%;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  background: #004284;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo-caption {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin: 0;
+  width: 18.75rem;
 }
 .logo-caption__img {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  padding: 0.625rem;
   width: 3.125rem;
+}
+.logo-caption__name {
+  color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: Source Sans Pro;
+  font-size: 1.3125rem;
+  font-weight: 100;
+}
+.logo-caption__name--motto {
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-size: 0.75rem;
+  font-weight: 100;
 }
 .navegator-header {
   display: -webkit-box;
@@ -124,7 +172,11 @@ a img {
   padding: 0 2rem;
 }
 .navegator-header__option {
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-weight: 100;
   padding: 0 1rem;
+  text-decoration: none;
 }
 .navegator-header__option--relative {
   position: relative;
@@ -136,14 +188,14 @@ a img {
   position: absolute;
   bottom: 0;
   left: 0;
+  background-color: #f00;
+  display: none;
+  padding: 1rem 0 0 1rem;
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
   -o-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
-  padding: 1rem 0 0 1rem;
-  display: none;
-  background-color: #c41515;
 }
 .submenu__option {
   padding-top: 0.5rem;
