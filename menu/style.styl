@@ -11,6 +11,7 @@ light = 100
 .main-header
     align-items: center
     background: blue
+    border-bottom: rem( 4 ) solid #3DA0E2
     display: flex
     justify-content: space-between
     width: 100%
@@ -19,8 +20,9 @@ light = 100
     align-items: center
     color: #fff
     display: flex
+    line-height: rem( 10 )
     margin: 0
-    width: rem( 300px )
+    width: rem( 300 )
 
     &__img
         display: flex
@@ -34,23 +36,30 @@ light = 100
         font-family: Source Sans Pro
         font-size: rem( 21 )
         font-weight: light
+        margin-top: 1.2rem
 
         &--motto
-            color: #fff
+            color: rgba( 255, 255, 255, 0.8 )
             font-family: Source Sans Pro
             font-size: rem( 12 )
             font-weight: light
 
 .navegator-header
+    align-content: center
     display: flex
-    padding: 0 2rem
 
     &__option
+        align-items: center
         color: #fff
         font-family: Source Sans Pro
+        font-size: rem( 16 )
         font-weight: light
-        padding: 0 1rem
-        text-decoration: none
+        height: 70px
+        width: 135px
+
+        &:hover
+            background-color: #1B68A8
+            color: #fff
 
         &--relative
             position: relative
@@ -60,11 +69,23 @@ light = 100
                     display: block
 
 .submenu
-    absolute: bottom left
-    background-color: red
+    align-self: auto
+    background-color: blue
     display: none
-    padding: 1rem 0 0 1rem
-    transform: translateY( 100% )
+    justify-content: center
+    margin-top: rem( 58 )
+    transform: translateX( -52% )
+    width: rem( 270 )
 
     &__option
-        padding-top: 0.5rem
+        height: rem( 50px )
+
+        &:hover
+            background-color: #1B68A8
+
+a
+    color: white
+    padding-top: 1.75rem
+    position: absolute
+    text-align: center
+    text-decoration: none
