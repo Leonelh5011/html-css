@@ -45,7 +45,7 @@ light = 100
             font-weight: light
 
 .navegator-header
-    align-content: center
+
     display: flex
 
     &__option
@@ -56,6 +56,10 @@ light = 100
         font-weight: light
         height: 70px
         width: 135px
+        display: flex
+        justify-content: center
+
+
 
         &:hover
             background-color: #1B68A8
@@ -63,6 +67,7 @@ light = 100
 
         &--relative
             position: relative
+            display: block
 
             &:hover
                 .submenu
@@ -73,19 +78,40 @@ light = 100
     background-color: blue
     display: none
     justify-content: center
-    margin-top: rem( 58 )
-    transform: translateX( -52% )
+    z-index: 100
+    absolute bottom -0.25rem right
     width: rem( 270 )
+    transform: translateY(100%)
 
     &__option
-        height: rem( 50px )
+        height: rem( 50 )
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &--inter
+            color: #fff
+            font-family: Source Sans Pro
+            font-size: rem( 16 )
+            font-weight: light
+            text-decoration: none
+
+
+
 
         &:hover
             background-color: #1B68A8
 
-a
+.menu-link
     color: white
-    padding-top: 1.75rem
-    position: absolute
-    text-align: center
     text-decoration: none
+    display: flex
+    justify-content: center
+    align-content: center
+
+.navegator-submenu
+
+    &__title
+        absolute top 50% left 50%
+        transform: translate(-50%, -50%)
+
